@@ -1,4 +1,4 @@
-pub contract Token_Create {
+pub contract Create_Token {
     pub var tokens:{Address:token};
     pub struct token {
         pub let name: String
@@ -7,7 +7,7 @@ pub contract Token_Create {
         init(_name:String,_symbol: String,_decimal: Int){
             self.name=_name
             self.symbol=_symbol
-            self.decimal=_decimal 
+            self.decimal=_decimal
         }
     }
     pub fun addtoken(name:String,symbol: String,decimal:Int,address:Address){
