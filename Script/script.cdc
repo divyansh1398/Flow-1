@@ -1,5 +1,5 @@
-import Token_Create from 0x01
+import Create_Token from 0x05
 
-pub fun main(account:Address):Token_Create.token{
-  return Token_Create.tokens[account]!;
+pub fun main(account:Address):Create_Token.token{
+  return Create_Token.tokens[account]!;
 }
